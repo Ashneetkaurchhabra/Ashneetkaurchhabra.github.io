@@ -20,6 +20,7 @@
 
 <body class="day">
 
+  <!-- SAME BACKGROUND AS HOME + ALERTS -->
   <div class="sun"></div>
   <div class="moon"></div>
   <div class="stars"></div>
@@ -92,11 +93,7 @@
 <g class="zone" data-zone="City Park">
   <g transform="translate(70,150)">
     <rect width="260" height="220" rx="22" fill="#c8f5cd" stroke="#79c57f" stroke-width="3"/>
-
-    <!-- LABEL INSIDE TOP LEFT -->
     <text x="10" y="20" font-size="11" fill="#555" font-weight="700">City Park</text>
-
-    <!-- Park emojis -->
     <text class="emoji-lg" x="20" y="80">🎠</text>
     <text class="emoji-lg" x="110" y="130">⛲</text>
     <text class="emoji-lg" x="200" y="90">🌳</text>
@@ -104,15 +101,11 @@
   </g>
 </g>
 
-
-<!-- ⭐ SCHOOL (with buses inside) -->
+<!-- ⭐ SCHOOL -->
 <g class="zone" data-zone="Central School">
   <g transform="translate(330,60)">
     <rect width="240" height="120" rx="14" fill="#ffecc8" stroke="#e7c48e"/>
-
-    <!-- LABEL INSIDE TOP-LEFT -->
     <text x="10" y="18" font-size="11" fill="#555" font-weight="700">Central School</text>
-
     <text class="emoji-lg" x="20" y="65">🏫</text>
     <text class="emoji" x="100" y="70">🚌</text>
     <text class="emoji" x="140" y="70">🚌</text>
@@ -120,15 +113,11 @@
   </g>
 </g>
 
-
 <!-- ⭐ HOSPITAL -->
 <g class="zone" data-zone="City Hospital">
   <g transform="translate(860,60)">
     <rect width="240" height="120" rx="14" fill="#ffe2e2" stroke="#ffbaba"/>
-
-    <!-- LABEL -->
     <text x="10" y="18" font-size="11" fill="#555" font-weight="700">City Hospital</text>
-
     <text class="emoji-lg" x="20" y="65">🏥</text>
     <text class="emoji-lg" x="120" y="85">🚑</text>
   </g>
@@ -138,24 +127,18 @@
 <g class="zone" data-zone="St. Mark's Church">
   <g transform="translate(1020,220)">
     <rect width="160" height="100" rx="12" fill="#ffe6f2" stroke="#f0c7d5"/>
-
     <text x="10" y="18" font-size="11" fill="#555" font-weight="700">St. Mark’s Church</text>
-
     <text class="emoji-lg" x="20" y="65">⛪</text>
   </g>
 </g>
-
 
 <!-- ⭐ RAILWAY STATION -->
 <g class="zone" data-zone="Railway Station">
   <g transform="translate(860,420)">
     <rect width="280" height="120" rx="12" fill="#f5f9ff" stroke="#dbe3ff"/>
-
     <text x="10" y="18" font-size="11" fill="#555" font-weight="700">Railway Station</text>
-
     <text class="emoji-lg" x="20" y="70">🚆</text>
 
-    <!-- TRACK remains unchanged -->
     <g transform="translate(40,60)">
       <rect width="220" height="6" fill="#aaa"/>
       <rect y="14" width="220" height="6" fill="#aaa"/>
@@ -178,178 +161,144 @@
   </g>
 </g>
 
-
 <!-- ⭐ TOWN MARKET -->
 <g class="zone" data-zone="Town Market">
   <g transform="translate(430,300)">
     <rect width="140" height="100" rx="14" fill="#fff6df" stroke="#e9d5b4"/>
-
     <text x="10" y="18" font-size="11" fill="#555" font-weight="700">Town Market</text>
-
     <text class="emoji-lg" x="10" y="70">🛒</text>
   </g>
 </g>
-
 
 <!-- ⭐ MALL -->
 <g class="zone" data-zone="Rainbow Mall">
   <g transform="translate(80,460)">
     <rect width="300" height="140" rx="14" fill="#ede2ff" stroke="#cbbaff"/>
-
     <text x="10" y="18" font-size="11" fill="#555" font-weight="700">Rainbow Mall</text>
-
     <text class="emoji-lg" x="20" y="90">🛍️</text>
   </g>
 </g>
-
 
 <!-- ⭐ DAIRY -->
 <g class="zone" data-zone="Dairy Corner">
   <g transform="translate(300,520)">
     <rect width="120" height="60" rx="10" fill="#fff8d6" stroke="#e7dca8"/>
-
     <text x="10" y="18" font-size="11" fill="#555" font-weight="700">Dairy Corner</text>
-
     <text class="emoji" x="12" y="45">🧀</text>
   </g>
 </g>
 
-  <!-- ⭐⭐⭐ ELM GROVE RESIDENCY — Residential Square Block ⭐⭐⭐ -->
+<!-- ⭐ ELM GROVE -->
+<text x="700" y="180" font-size="10" fill="#444" font-weight="700">Elm Grove Residency</text>
 
-  <!-- Street Name (moved more upward) -->
-  <text x="700" y="180" font-size="10" fill="#444" font-weight="700">
-    Elm Grove Residency
-  </text>
-
-  <!-- TOP ROW HOUSES — moved further upward -->
-  <!-- House 1 -->
-  <g class="zone" data-zone="House 1">
-    <g transform="translate(690,205)">
-      <text class="emoji" x="0" y="25">🏠</text>
-      <text class="emoji-sm" x="-25" y="10">🌳</text>
-      <text class="emoji-sm" x="40" y="25">📬</text>
-      <text x="0" y="70" font-size="11">House 1</text>
-    </g>
+<g class="zone" data-zone="House 1">
+  <g transform="translate(690,205)">
+    <text class="emoji" x="0" y="25">🏠</text>
+    <text class="emoji-sm" x="-25" y="10">🌳</text>
+    <text class="emoji-sm" x="40" y="25">📬</text>
+    <text x="0" y="70" font-size="11">House 1</text>
   </g>
+</g>
 
-  <!-- House 3 -->
-  <g class="zone" data-zone="House 3">
-    <g transform="translate(795,205)">
-      <text class="emoji" x="0" y="25">🏡</text>
-      <text class="emoji-sm" x="-25" y="10">🌲</text>
-      <text class="emoji-sm" x="40" y="25">📬</text>
-      <text x="0" y="70" font-size="11">House 3</text>
-    </g>
+<g class="zone" data-zone="House 3">
+  <g transform="translate(795,205)">
+    <text class="emoji" x="0" y="25">🏡</text>
+    <text class="emoji-sm" x="-25" y="10">🌲</text>
+    <text class="emoji-sm" x="40" y="25">📬</text>
+    <text x="0" y="70" font-size="11">House 3</text>
   </g>
+</g>
 
-  <!-- BOTTOM ROW HOUSES — moved further upward -->
-  <!-- House 7 -->
-  <g class="zone" data-zone="House 7">
-    <g transform="translate(690,275)">
-      <text class="emoji" x="0" y="25">🏘️</text>
-      <text class="emoji-sm" x="-25" y="10">🌳</text>
-      <text class="emoji-sm" x="40" y="25">📬</text>
-      <text x="0" y="70" font-size="11">House 7</text>
-    </g>
+<g class="zone" data-zone="House 7">
+  <g transform="translate(690,275)">
+    <text class="emoji" x="0" y="25">🏘️</text>
+    <text class="emoji-sm" x="-25" y="10">🌳</text>
+    <text class="emoji-sm" x="40" y="25">📬</text>
+    <text x="0" y="70" font-size="11">House 7</text>
   </g>
+</g>
 
-  <!-- House 8 -->
-  <g class="zone" data-zone="House 8">
-    <g transform="translate(795,275)">
-      <text class="emoji" x="0" y="25">🏡</text>
-      <text class="emoji-sm" x="-25" y="10">🌲</text>
-      <text class="emoji-sm" x="40" y="25">📬</text>
-      <text x="0" y="70" font-size="11">House 8</text>
-    </g>
+<g class="zone" data-zone="House 8">
+  <g transform="translate(795,275)">
+    <text class="emoji" x="0" y="25">🏡</text>
+    <text class="emoji-sm" x="-25" y="10">🌲</text>
+    <text class="emoji-sm" x="40" y="25">📬</text>
+    <text x="0" y="70" font-size="11">House 8</text>
   </g>
+</g>
 
-
-  <!-- ⭐ HOUSE 4 -->
-  <g class="zone" data-zone="House 4">
-    <g transform="translate(430,500)">
-      <text class="emoji" x="0" y="25">🏡</text>
-      <text x="0" y="55" font-size="11">House 4</text>
-    </g>
+<!-- ⭐ HOUSES -->
+<g class="zone" data-zone="House 4">
+  <g transform="translate(430,500)">
+    <text class="emoji" x="0" y="25">🏡</text>
+    <text x="0" y="55" font-size="11">House 4</text>
   </g>
+</g>
 
-  <!-- ⭐ HOUSE 5 -->
-  <g class="zone" data-zone="House 5">
-    <g transform="translate(520,520)">
-      <text class="emoji" x="0" y="25">🏡</text>
-      <text x="0" y="55" font-size="11">House 5</text>
-    </g>
+<g class="zone" data-zone="House 5">
+  <g transform="translate(520,520)">
+    <text class="emoji" x="0" y="25">🏡</text>
+    <text x="0" y="55" font-size="11">House 5</text>
   </g>
+</g>
 
-  <!-- ⭐ HOUSE 6 -->
-  <g class="zone" data-zone="House 6">
-    <g transform="translate(250,380)">
-      <text class="emoji" x="0" y="25">🏡</text>
-      <text x="0" y="55" font-size="11">House 6</text>
-    </g>
+<g class="zone" data-zone="House 6">
+  <g transform="translate(250,380)">
+    <text class="emoji" x="0" y="25">🏡</text>
+    <text x="0" y="55" font-size="11">House 6</text>
   </g>
+</g>
 
-  <!-- ⭐ WELL -->
-  <g class="zone" data-zone="Community Well">
-    <g transform="translate(610,540)">
-      <text class="emoji-lg" x="0" y="30">💧</text>
-      <text x="10" y="70" font-size="11">Well</text>
-    </g>
+<!-- ⭐ WELL -->
+<g class="zone" data-zone="Community Well">
+  <g transform="translate(610,540)">
+    <text class="emoji-lg" x="0" y="30">💧</text>
+    <text x="10" y="70" font-size="11">Well</text>
   </g>
+</g>
 
 <!-- ⭐ BUS STAND -->
 <g class="zone" data-zone="Bus Stand">
   <g transform="translate(720,520)">
     <rect width="150" height="70" rx="12" fill="#fff4d9" stroke="#f0d7a6"/>
-
     <text x="10" y="18" font-size="11" fill="#555" font-weight="700">Bus Stand</text>
-
     <text class="emoji-lg" x="20" y="55">🚌</text>
   </g>
 </g>
-
 
 <!-- ⭐ POLICE -->
 <g class="zone" data-zone="Police Station">
   <g transform="translate(200,650)">
     <rect width="200" height="100" rx="14" fill="#e7f2ff" stroke="#c6d9ff"/>
-
     <text x="10" y="18" font-size="11" fill="#555" font-weight="700">Police Station</text>
-
     <text class="emoji-lg" x="20" y="70">🚓</text>
   </g>
 </g>
-
 
 <!-- ⭐ FIRE -->
 <g class="zone" data-zone="Fire Station">
   <g transform="translate(440,650)">
     <rect width="200" height="100" rx="14" fill="#ffe8e1" stroke="#f6c5b4"/>
-
     <text x="10" y="18" font-size="11" fill="#555" font-weight="700">Fire Station</text>
-
     <text class="emoji-lg" x="20" y="70">🚒</text>
   </g>
 </g>
-
 
 <!-- ⭐ POST OFFICE -->
 <g class="zone" data-zone="Post Office">
   <g transform="translate(840,650)">
     <rect width="200" height="100" rx="14" fill="#f2eaff" stroke="#d5c8ff"/>
-
     <text x="10" y="18" font-size="11" fill="#555" font-weight="700">Post Office</text>
-
     <text class="emoji-lg" x="20" y="70">📮</text>
   </g>
 </g>
 
-  <!-- ⭐ ROAD LABELS -->
-  <text x="110" y="130" font-size="11" fill="#444">Main St</text>
-  <text x="100" y="675" font-size="11" fill="#444">Market Rd</text>
+<!-- ⭐ ROAD LABELS -->
+<text x="110" y="130" font-size="11" fill="#444">Main St</text>
+<text x="100" y="675" font-size="11" fill="#444">Market Rd</text>
 
 </svg>
 </div>
-
 
 <!-- Modal -->
 <div id="mapModal" class="zone-modal">
@@ -364,6 +313,7 @@
 </main>
 </div>
 
+<!-- GLOBAL THEME SYSTEM + MAP LOGIC -->
 <script src="script.js"></script>
 <script src="map.js"></script>
 

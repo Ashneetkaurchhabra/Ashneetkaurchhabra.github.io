@@ -45,11 +45,7 @@
   border-radius: 16px;
   border: 1px solid rgba(255,255,255,0.18);
   position: relative;
-  background: linear-gradient(
-    180deg,
-    rgba(255,255,255,0.06),
-    rgba(0,0,0,0.06)
-  );
+  /* FIX: removed grey gradient so sky + moon + stars show correctly */
   box-shadow: 0 8px 30px rgba(0,0,0,0.16);
 }
 
@@ -61,7 +57,6 @@
   transition: transform 0.15s ease;
   cursor: grab;
 }
-
 
 /* labels inside svg */
 .label {
@@ -76,7 +71,6 @@
 }
 
 /* INTERACTIVE ZONES */
-/* Do NOT move or scale zones on hover → solve shaking */
 .zone {
   cursor: pointer;
   pointer-events: auto;

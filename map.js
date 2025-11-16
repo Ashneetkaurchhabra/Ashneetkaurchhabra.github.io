@@ -223,5 +223,16 @@ document.addEventListener("click", (e) => {
   }
 });
 
+
+// APPLY SAVED MOON PHASE ON MAP ALSO
+const savedPhase = localStorage.getItem("citypulse-moonphase");
+
+if (savedPhase !== null) {
+  const moon = document.querySelector(".moon");
+
+  for (let i = 0; i < 8; i++) moon.classList.remove(`phase-${i}`);
+  moon.classList.add(`phase-${savedPhase}`);
+}
+
 // Initial transform
 applyTransform();
