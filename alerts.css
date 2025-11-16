@@ -1,0 +1,89 @@
+/* Import page1 background elements */
+@import url('style.css');
+
+/* OVERRIDE layout for alerts page */
+.container {
+  max-width: 900px;
+  margin-top: 40px;
+}
+
+.title-main {
+  font-size: 24px;
+}
+
+.alerts-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* ALERT CARD */
+.alert-card {
+  background: var(--card-glass);
+  backdrop-filter: var(--blur);
+  padding: 18px 22px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.4);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  animation: fadeInUp 0.4s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.alert-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--accent2);
+}
+
+.alert-category {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.alert-desc {
+  margin-top: 6px;
+  font-size: 15px;
+}
+
+.alert-time {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #555;
+}
+
+/* FILTER BUTTONS */
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 14px;
+  background: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.filters button.active {
+  background: var(--accent2);
+  color: white;
+}
+
+.filters button:hover {
+  transform: translateY(-3px);
+}

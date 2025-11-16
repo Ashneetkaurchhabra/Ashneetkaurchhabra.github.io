@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>CityPulse — Feedback</title>
+
+  <!-- SAME BACKGROUND FILES LIKE ALERTS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="feedback.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="day">
+
+  <!-- EXACT SAME SKY AS ALERTS PAGE -->
+  <div class="sun"></div>
+  <div class="moon"></div>
+  <div class="stars"></div>
+
+  <div class="cloud cloud-left"></div>
+  <div class="cloud cloud-right"></div>
+
+  <div class="grass"></div>
+
+  <div class="container">
+
+    <header>
+      <div class="brand">
+        <div class="logo">
+          <img src="cp.jpg" alt="CityPulse">
+        </div>
+        <div>
+          <div class="title-main">CityPulse</div>
+          <div class="subtitle">Citizen Connect</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="alerts.html">Alerts</a>
+        <a href="map.html">Map</a>
+        <a class="active" href="feedback.html">Feedback</a>
+      </nav>
+    </header>
+
+    <main class="grid grid-feedback">
+      <div class="card feedback-card">
+
+        <h2 class="fb-title">💌 Share Your Feedback</h2>
+        <p class="fb-sub">We’d love to hear your thoughts and suggestions!</p>
+
+        <form id="feedbackForm">
+
+          <label>Name</label>
+          <input type="text" id="fbName" placeholder="Your name...">
+
+          <label>Email</label>
+          <input type="email" id="fbEmail" placeholder="you@example.com">
+
+          <label>Message</label>
+          <textarea id="fbMessage" rows="5" placeholder="Type your feedback..."></textarea>
+
+          <button type="submit" class="fb-btn">Submit Feedback</button>
+        </form>
+
+      </div>
+    </main>
+
+  </div>
+
+  <!-- SUCCESS POPUP -->
+  <div id="fbPopup" class="fb-popup">
+    <div class="fb-popup-card">
+      <h3>🎀 Thank you! 🎀</h3>
+      <p>Your message has been submitted successfully.</p>
+      <p class="socials">Follow us @CityPulseOfficial 💗</p>
+      <button id="closePopup">Close</button>
+    </div>
+  </div>
+
+  <!-- MAIN THEME SCRIPT (ALREADY WORKS WITH ALERTS) -->
+  <script src="script.js"></script>
+
+  <!-- FEEDBACK LOGIC -->
+  <script src="feedback.js"></script>
+
+</body>
+</html>

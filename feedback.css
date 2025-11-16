@@ -1,0 +1,148 @@
+/* FEEDBACK PAGE — same aesthetic as other pages */
+
+.grid-feedback {
+  grid-column: 1 / 13;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.feedback-card {
+  width: 100%;
+  max-width: 520px;
+  padding: 30px;
+}
+
+/* Titles */
+.fb-title {
+  margin: 0 0 6px 0;
+  color: var(--accent2);
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.fb-sub {
+  margin-bottom: 22px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Form */
+#feedbackForm label {
+  display: block;
+  margin: 10px 0 4px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+#feedbackForm input,
+#feedbackForm textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.6);
+  background: var(--card-glass);
+  color: white;
+  font-size: 14px;
+  backdrop-filter: blur(6px);
+  margin-bottom: 12px;
+}
+
+.fb-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.fb-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* SUCCESS POPUP */
+.fb-popup {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.45);
+  z-index: 999;
+}
+
+.fb-popup.show {
+  display: flex;
+}
+
+.fb-popup-card {
+  background: white;
+  color: #333;
+  padding: 26px;
+  border-radius: 16px;
+  width: 92%;
+  max-width: 340px;
+  text-align: center;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.2);
+}
+
+.fb-popup-card h3 {
+  margin: 0 0 6px;
+  font-size: 24px;
+}
+
+.socials {
+  margin: 4px 0 12px;
+  font-size: 13px;
+  color: #555;
+}
+
+#closePopup {
+  padding: 10px 20px;
+  border: none;
+  background: var(--accent2);
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* NIGHT MODE FIX — Make everything readable */
+.night .feedback-card {
+  color: white !important;
+}
+
+.night #feedbackForm input,
+.night #feedbackForm textarea {
+  background: rgba(255,255,255,0.15) !important; /* dark semi glass */
+  color: #ffffff !important;                     /* bright white text */
+  border: 1px solid rgba(255,255,255,0.6) !important;
+}
+
+/* Night mode placeholder */
+.night #feedbackForm input::placeholder,
+.night #feedbackForm textarea::placeholder {
+  color: rgba(255,255,255,0.7) !important;
+}
+
+/* Night mode labels */
+.night #feedbackForm label {
+  color: rgba(255,255,255,0.85) !important;
+}
+
+/* For DAY mode keep things clean */
+.day #feedbackForm input,
+.day #feedbackForm textarea {
+  color: #000 !important;
+  background: rgba(255,255,255,0.75) !important;
+}
+
+.day #feedbackForm input::placeholder,
+.day #feedbackForm textarea::placeholder {
+  color: #666 !important;
+}

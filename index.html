@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CityPulse — Cute Dashboard</title>
+
+  <!-- ⭐ Apply saved theme BEFORE CSS loads (no flashing) -->
+  <script>
+    const theme = localStorage.getItem("citypulse-theme") || "day";
+    document.documentElement.className = theme; 
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="day"> 
+
+  <!-- ☀️ SUN -->
+  <div class="sun"></div>
+
+  <!-- 🌙 MOON (phase set by JS and saved for other pages) -->
+  <div class="moon"></div>
+
+  <!-- ✨ STARS -->
+  <div class="stars"></div>
+
+  <!-- ☁️ CLOUDS -->
+  <div class="cloud cloud-left"></div>
+  <div class="cloud cloud-right"></div>
+
+  <!-- 🌱 GRASS -->
+  <div class="grass"></div>
+
+  <div class="container">
+
+    <!-- HEADER -->
+    <header>
+      <div class="brand">
+
+        <!-- LOGO IMAGE -->
+        <div class="logo">
+          <img src="cp.jpg" alt="CityPulse Logo">
+        </div>
+
+        <div>
+          <div class="title-main">CityPulse</div>
+          <div class="subtitle">Cute Smart City Dashboard</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="alerts.html">Alerts</a>
+        <a href="map.html">Map</a>
+        <a href="feedback.html">Feedback</a>
+      </nav>
+    </header>
+
+
+    <main class="grid">
+
+      <!-- CUTE CLOCK -->
+      <div class="clock-box" id="clockBox">--</div>
+
+      <!-- METRIC CARDS -->
+      <section class="top-cards">
+
+        <div class="card metric">
+          <div class="title">Temperature</div>
+          <div class="value" id="tempVal">-- °C</div>
+        </div>
+
+        <div class="card metric">
+          <div class="title">Air Quality Index</div>
+          <div class="value" id="aqiVal">--</div>
+        </div>
+
+        <div class="card metric">
+          <div class="title">Traffic Density</div>
+          <div class="value" id="trafficVal">-- %</div>
+        </div>
+
+      </section>
+
+      <!-- ⭐ THREE CHARTS IN ONE ROW -->
+      <div class="chart-container">
+
+        <div class="chart-card">
+          <h3>Temperature — Last 12 Hours</h3>
+          <canvas id="tempChart"></canvas>
+        </div>
+
+        <div class="chart-card">
+          <h3>AQI — Past Week</h3>
+          <canvas id="aqiChart"></canvas>
+        </div>
+
+        <div class="chart-card">
+          <h3>Traffic Density — Last 12 Hours</h3>
+          <canvas id="trafficChart"></canvas>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

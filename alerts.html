@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CityPulse — Alerts & News</title>
+
+  <link rel="stylesheet" href="alerts.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="day">
+
+  <!-- SUN -->
+  <div class="sun"></div>
+
+  <!-- MOON -->
+  <div class="moon"></div>
+
+  <!-- STARS -->
+  <div class="stars"></div>
+
+  <!-- CLOUDS -->
+  <div class="cloud cloud-left"></div>
+  <div class="cloud cloud-right"></div>
+
+  <!-- GRASS -->
+  <div class="grass"></div>
+
+  <div class="container">
+
+    <header>
+      <div class="brand">
+        <div class="logo"><img src="cp.jpg"></div>
+        <div>
+          <div class="title-main">CityPulse</div>
+          <div class="subtitle">City Alerts & News</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a class="active" href="alerts.html">Alerts</a>
+        <a href="map.html">Map</a>
+        <a href="feedback.html">Feedback</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <!-- FILTER BUTTONS -->
+      <div class="filters">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="Traffic">Traffic</button>
+        <button data-filter="Weather">Weather</button>
+        <button data-filter="Health">Health</button>
+        <button data-filter="Public">Public Notices</button>
+      </div>
+
+      <!-- ALERTS LIST -->
+      <div id="alertsContainer" class="alerts-list"></div>
+
+    </main>
+
+  </div>
+
+  <script src="alerts.js"></script>
+
+</body>
+</html>
